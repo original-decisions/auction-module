@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{18978EA4-B8CD-4F5F-B8FF-5EED3144EDA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1E669FE0-54CA-468F-AB3E-ECB170A15DEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2F5ABD6C-196D-4A80-8C46-5503BD6D9D63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "odec.CP.Server.Model.Auction.Abst", "..\src\Model\Server.Model.Auction.Abst\odec.CP.Server.Model.Auction.Abst.csproj", "{897822E3-DE56-4A6D-9A58-7B42CC4C33CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "odec.CP.Server.Model.Auction", "..\src\Model\Server.Model.Auction\odec.CP.Server.Model.Auction.csproj", "{256D5977-F8EB-4EDA-946C-BC3B8B9A05B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "odec.CP.Auction.DAL.Interop", "..\src\Auction.DAL.Interop\odec.CP.Auction.DAL.Interop.csproj", "{A15591AF-1228-4A21-8310-192ED1197FDF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "odec.CP.Auction.DAL", "..\src\Auction.DAL\odec.CP.Auction.DAL.csproj", "{D987BC85-9DE2-4AB2-B5BF-E326657FFB6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL.Tests", "..\tests\DAL.Tests\DAL.Tests.csproj", "{603F2443-4C3B-4A43-8246-1DFA12863EB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{897822E3-DE56-4A6D-9A58-7B42CC4C33CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{897822E3-DE56-4A6D-9A58-7B42CC4C33CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{897822E3-DE56-4A6D-9A58-7B42CC4C33CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{897822E3-DE56-4A6D-9A58-7B42CC4C33CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{256D5977-F8EB-4EDA-946C-BC3B8B9A05B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256D5977-F8EB-4EDA-946C-BC3B8B9A05B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256D5977-F8EB-4EDA-946C-BC3B8B9A05B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256D5977-F8EB-4EDA-946C-BC3B8B9A05B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15591AF-1228-4A21-8310-192ED1197FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15591AF-1228-4A21-8310-192ED1197FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15591AF-1228-4A21-8310-192ED1197FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15591AF-1228-4A21-8310-192ED1197FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D987BC85-9DE2-4AB2-B5BF-E326657FFB6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D987BC85-9DE2-4AB2-B5BF-E326657FFB6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D987BC85-9DE2-4AB2-B5BF-E326657FFB6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D987BC85-9DE2-4AB2-B5BF-E326657FFB6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{603F2443-4C3B-4A43-8246-1DFA12863EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{603F2443-4C3B-4A43-8246-1DFA12863EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{603F2443-4C3B-4A43-8246-1DFA12863EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{603F2443-4C3B-4A43-8246-1DFA12863EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{897822E3-DE56-4A6D-9A58-7B42CC4C33CD} = {18978EA4-B8CD-4F5F-B8FF-5EED3144EDA2}
+		{256D5977-F8EB-4EDA-946C-BC3B8B9A05B3} = {18978EA4-B8CD-4F5F-B8FF-5EED3144EDA2}
+		{603F2443-4C3B-4A43-8246-1DFA12863EB5} = {2F5ABD6C-196D-4A80-8C46-5503BD6D9D63}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8ACEF0F0-38FF-4AFE-9ECB-21E939A3E010}
+	EndGlobalSection
+EndGlobal

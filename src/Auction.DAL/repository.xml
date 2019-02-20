@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object id="AuctionRepository" name="AuctionRepository"
+      type="odec.Auction.DAL.AuctionRepository, odec.Auction.DAL">
+  </object>
+</objects>

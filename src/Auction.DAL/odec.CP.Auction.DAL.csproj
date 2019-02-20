@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Description>Auctions data access layer</Description>
+    <Copyright>Original Decisions</Copyright>
+    <VersionPrefix>1.0.1</VersionPrefix>
+    <Authors>Mary Pirogova &lt;mashijob@yandex.ru&gt;;Alex Pirogov &lt;pirjob@yandex.ru&gt;</Authors>
+    <TargetFrameworks>netcoreapp1.0;net452;netcoreapp2.1</TargetFrameworks>
+    <AssemblyName>odec.CP.Auction.DAL</AssemblyName>
+    <PackageId>odec.CP.Auction.DAL</PackageId>
+    <PackageTags>Auction;DAL;odec;Original Decisions</PackageTags>
+    <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netcoreapp1.0' ">$(PackageTargetFallback);dotnet5.6</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+
+   <ItemGroup>
+     <PackageReference Include="odec.CP.Entity.DAL" Version="1.1.*"></PackageReference>
+   </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Auction.DAL.Interop\odec.CP.Auction.DAL.Interop.csproj" />
+    <ProjectReference Include="..\Model\Server.Model.Auction\odec.CP.Server.Model.Auction.csproj" />
+  </ItemGroup>
+
+</Project>

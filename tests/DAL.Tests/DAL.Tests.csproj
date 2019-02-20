@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <Authors>Mary Pirogova &lt;mashijob@yandex.ru&gt;;Alex Pirogov &lt;pirjob@yandex.ru&gt;</Authors>
+    <TargetFrameworks>netcoreapp1.0;net452;netcoreapp2.1</TargetFrameworks>
+    <AssemblyName>CP.Auction.DAL.Tests</AssemblyName>
+    <PackageId>CP.Auction.DAL.Tests</PackageId>
+    <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;portable-net45+win8</PackageTargetFallback>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0" />
+    <packagereference Include="NUnit3TestAdapter" Version="3.12.0"></packagereference>
+
+     <PackageReference Include="odec.CP.Server.Model.Category" Version="1.1.*"></PackageReference>
+     
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.1'">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.1.1" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' Or '$(TargetFramework)' == 'netcoreapp1.0'">
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="1.1.2" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net452' ">
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Auction.DAL\odec.CP.Auction.DAL.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+  </ItemGroup>
+
+</Project>

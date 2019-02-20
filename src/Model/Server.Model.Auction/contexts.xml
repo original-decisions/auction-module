@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object id="AuctionContext" name="AuctionContext"
+      type="odec.Server.Model.Auction.Contexts.AuctionContext, odec.Server.Model.Auction" singleton="true">
+  </object>
+</objects>
