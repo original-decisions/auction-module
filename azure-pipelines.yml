@@ -44,6 +44,6 @@ steps:
   displayName: 'Add Tag(s) on Succeeded build'
   inputs:
     tags: |
-     Social Network
+     Auction
      Core
      Succeeded
